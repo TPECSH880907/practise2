@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/heltus.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+   <title>Document</title>
+</head>
+<body>
+  <div class="NEW">
+    <nav class="navbar navbar-light shadow-lg bg-dark mb-5 justify-content-evenly">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand"><h2 class="fs-5 mt-2 text-center text-white tiny5-regular">台灣休閒潮流<br>Taiwan Leisure apparel</h2></a>
+        <div class="d-flex">
+          <div class="FBIG" data-bs-toggle="dropdown" style="margin-top:20px; margin-right: 30px;">
+              <a href="#"><i class="bi bi-heart-fill text-white" style="font-size:28px;"></i></a>
+              <span class="position-absolute translate-middle badge rounded-pill bg-danger" id="favoriteNum" style="font-size: 13px;">
+                  1+
+              </span>
+              <div class="dropdown-menu container">
+                  <div class="TVBS d-flex align-items-center text-center">
+                      <i class="bi bi-plus-lg ps-3"></i>
+                      <img src="./img/2.avif" style="width: 100px;">
+                      <div class="d-flex flex-column">
+                       <h5 class="text-center">女裝休閒潮流T</h5><br>
+                       <p class="text-center">NT$700</p>
+                      </div>
+                  </div>
+                  <button>前往結帳</button>
+              </div>
+          </div>
+          <div class="shopee">
+              <h3 class="FBIG" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-top: 23px; margin-right: 30px;">
+                  <a href="#"><i class="bi bi-cart-plus text-white"></i></a>
+                  <span class="position-absolute   translate-middle badge rounded-pill bg-danger" id="favoriteNum" style="font-size: 13px;">
+                      2+
+                  </span>
+              </h3>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header bg-secondary">
+                      <h5 class="text-white" id="offcanvasRightLabel">購物清單</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+  
+                  <div class="offcanvas-body">
+  
+                      <div class="boy d-flex align-items-center">
+                          <a href="#"><i class="bi bi-plus-lg text-dark fs-5 p-1"></i></a>
+                          <img src="./img/3.avif" alt="">
+                          <div class="A1 flex-column">
+                              <h5>男裝休閒深藍西裝襯衫</h5>
+                              <P>NT$1200</P>
+                          </div>
+                      </div>
+  
+                      <div class="roc d-flex align-items-center">
+                          <a href="#"><i class="bi bi-plus-lg text-dark fs-5 p-2"></i></a>
+                          <img src="./img/4.avif" alt="">
+                          <div class="A1 flex-column">
+                              <h5>男裝深藍西裝外套</h5>
+                              <P>NT$1200</P>
+                          </div>
+                      </div>
+  
+                      <div class="TW1 d-flex justify-content-center">
+                          <h2>總金額:</h2><p>2400</p>
+                      </div>
+  
+                      <div class="girl d-flex justify-content-center">
+                          <button class="w-20">繼續選購</button>
+                          <button class="w-20">前往結帳</button>
+                      </div>
+                  </div>
+              </div>
+          </div>        
+        </div>       
+    </nav>
+    <div class="d-flex align-items-center justify-content-evenly ">
+        <div class="KFC" style="margin-bottom: 1200px;">
+            <div class="jeans">
+                <div class="text-center">
+                    <h4>羊毛絨童裝</h4>
+                    <div class="d-flex justify-content-between">
+                        <p class="text-secondary text-decoration-line-through" style="margin-left: 30px; margin-top: 10px;">$300</p>
+                        <p class="text-danger fs-2">$295</p>
+                    </div>
+                  </div>
+                <hr class="ms-2" style="width: 320px;">
+            </div>
+            <div class="d-flex align-items-center ms-4">
+                <div class="btn-group text-dark ms-4" role="group" aria-label="...">
+                  <a class="text-decoration-none text-dark d-flex me-3" id="modal" href="./1.html"><i class="bi bi-rulers"></i><p>尺寸</p></a>
+                    <a class="text-decoration-none text-dark d-flex me-3" href="#"><i class="bi bi-universal-access"></i><p>試穿報告</p></a>
+                    <a class="text-decoration-none text-dark d-flex" href="#"><i class="bi bi-heart-fill"></i><p>收藏商品</p></a>
+                </div>
+            </div>
+            <div class="d-flex ms-3">
+                <select class="form-select form-select-sm ms-3 " aria-label="Small select example" style="width: 150px;">
+                    <option selected>請選擇數量</option>
+                    <option value="1">1件</option>
+                    <option value="2">2件</option>
+                    <option value="3">3件</option>
+                    <option value="4">4件</option>
+                    <option value="5">5件</option>
+                    <option value="6">6件</option>
+                    <option value="7">7件</option>
+                    <option value="8">8件</option>
+                    <option value="9">9件</option>
+                    <option value="10">10件</option>
+                    <option value="11">11件</option>
+                    <option value="12">12件</option>
+                    <option value="13">13件</option>
+                    <option value="14">14件</option>
+                    <option value="15">15件</option>
+                    <option value="16">16件</option>
+                    <option value="17">17件</option>
+                    <option value="18">18件</option>
+                    <option value="19">19件</option>
+                    <option value="20">20件</option>
+                </select>
+                <div class="product-more">
+                    <button class="btn btn-danger my-cart-btn"><i class="bi bi-plus" style="font-size: 13px;"></i>加入購物車</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./img/17.avif" style="width: 500px; height: 500px;" alt="">
+            <h2 class="text-center mt-3">商品介紹</h2>
+            <p class="text-center fs-3">品質看得見，穿出時尚</p>
+            <img src="./img/33.avif" style="width: 500px; height: 500px;" alt="">
+            <br>
+            <br>
+            <img src="./img/34.avif" style="width: 500px; height: 500px;" alt="">
+        </div>
+    </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center mt-5 p-5 border-top bg-dark">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          </a>
+          <span class="text-white" style="font-size: 30px;">&copy; 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
+          <a href="#"><i class="bi bi-facebook me-3 text-white" style="font-size: 52px;"></i></a>
+          <a href="#"><i class="bi bi-instagram me-3 text-white"style="font-size: 52px;"></i></a>
+          <a href="#"><i class="bi bi-twitter me-3 text-white"  style="font-size: 52px;"></i></a>
+        </ul>
+    </footer>
+</div>
+</body>
+</html>

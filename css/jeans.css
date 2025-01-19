@@ -1,0 +1,30 @@
+
+.tiny5-regular{
+    font-family: "俐方體11號";
+}
+  
+  
+.pacifico-regular {
+    font-family: "清松手寫體6p";
+}
+.product-more {
+    display: flex;
+    padding-top: .2rem;
+    text-align: center;
+    width: 120px;
+}
+
+.product-more a:first-child {
+    border: 1px solid #000000;
+}
+
+.product-more a {
+    font-weight: bolder;
+    flex: 1;
+    padding: .2rem 0;
+    border: 1px solid #000000;
+    text-decoration: none;
+    background: beige;
+}
+
+
